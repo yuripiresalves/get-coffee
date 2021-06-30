@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #242424;
+  --yellow: #fca60f;
+  --brown: #c95e20;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: var(--black);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* @media (max-width: 480px) {
+  html {
+    font-size: 40%;
+  }
+} */
+
+header {
+  box-shadow: 0px 1px 8px rgba(36, 36, 36, 0.15);
+}
+
+header .container {
+  max-width: 117.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.menu ul {
+  font-size: 1.8rem;
+  display: flex;
+}
+
+.menu ul li + li {
+  margin-left: 6rem;
+}
+
+.menu ul li a {
+  position: relative;
+}
+
+.menu ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: var(--brown);
+}
+
+.menu ul li a:hover::after,
+.menu ul li a:focus::after {
+  animation: menuHover 0.2s forwards;
+}
+
+.menu ul li a.active::after {
+  width: 100%;
+}
+
+@keyframes menuHover {
+  to {
+    width: 100%;
+  }
+}
