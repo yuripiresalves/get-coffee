@@ -19,7 +19,7 @@ main .info {
 }
 
 main .info::before {
-  content: url('assets/forma1.svg');
+  content: url('../assets/forma1.svg');
   position: absolute;
   z-index: -1;
   top: -100px;
@@ -74,7 +74,7 @@ main .img {
 }
 
 main .img::after {
-  content: url('assets/forma2.svg');
+  content: url('../assets/forma2.svg');
   position: absolute;
   z-index: -1;
   top: -230px;
