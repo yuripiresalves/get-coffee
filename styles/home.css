@@ -19,7 +19,7 @@ main .info {
 }
 
 main .info::before {
-  content: url('/assets/forma1.svg');
+  content: url('assets/forma1.svg');
   position: absolute;
   z-index: -1;
   top: -100px;
@@ -74,7 +74,7 @@ main .img {
 }
 
 main .img::after {
-  content: url('/assets/forma2.svg');
+  content: url('assets/forma2.svg');
   position: absolute;
   z-index: -1;
   top: -230px;
@@ -176,7 +176,8 @@ h2.title::before {
   margin-top: 3rem;
 }
 
-.product .info button {
+.product .info button,
+.form button {
   margin-top: 2rem;
   padding: 1.5rem 5.5rem;
   border-radius: 0.5rem;
@@ -191,7 +192,9 @@ h2.title::before {
 }
 
 .product .info button:hover,
-.product .info button:focus {
+.product .info button:focus,
+.form button:hover,
+.form button:focus {
   background-color: var(--yellow);
   transform: scale(1.05);
 }
